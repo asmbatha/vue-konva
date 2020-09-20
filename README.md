@@ -29,7 +29,7 @@ See [Tutorials page](https://konvajs.org/docs/vue/)
 
 ## Quick Start
 
-[Vue.js](https://vuejs.org) version 2.4+ is required.
+[Vue.js](https://vuejs.org) version >3.0.0-beta is required.
 
 ### 1 Install via npm
 ```npm
@@ -39,10 +39,12 @@ npm install vue-konva konva --save
 ### 2 Import and use VueKonva
 
 ```javascript
-import Vue from 'vue';
-import VueKonva from 'vue-konva'
-
-Vue.use(VueKonva)
+import { createApp } from 'vue'
+import App from './App.vue'
+import VueKonva from '@/konva'
+createApp(App)
+    .use(VueKonva)
+    .mount('#app')
 ```
 
 ### 3 Reference in your component templates
@@ -79,7 +81,7 @@ export default {
 </script>
 ```
 
-### Or use a CDN
+### Or use a CDN [TODO]
 ```html
 <html>
   <head>
@@ -162,10 +164,12 @@ By default `vue-konva` is using `v-` prefix for all components.
 You can use your own prefix if default one conflicts with some other libs or your components.
 
 ```javascript
-import Vue from 'vue';
-import VueKonva from 'vue-konva'
-
-Vue.use(VueKonva, { prefix: 'Konva'});
+import { createApp } from 'vue'
+import App from './App.vue'
+import VueKonva from '@/konva'
+createApp(App)
+    .use(VueKonva, { prefix: 'Konva'})
+    .mount('#app')
 
 // in template:
 <konva-stage ref="stage" :config="stage">
