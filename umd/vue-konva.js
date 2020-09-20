@@ -307,7 +307,7 @@ function _extends() { _extends = Object.assign || function (target) { for (var i
     this.uploadKonva();
     this.validateChildren();
   },
-  beforeDestroy: function beforeDestroy() {
+  beforeUnmount: function beforeUnmount() {
     this._konvaNode.destroy();
   },
   methods: {

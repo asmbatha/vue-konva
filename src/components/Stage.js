@@ -40,7 +40,7 @@ export default {
         this.uploadKonva()
         this.validateChildren()
     },
-    beforeDestroy() {
+    beforeUnmount() {
         this._konvaNode.destroy()
     },
     methods: {
