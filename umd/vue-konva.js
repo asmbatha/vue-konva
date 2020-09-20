@@ -417,7 +417,7 @@ var CONTAINERS = {
     if (needRedraw) {
       updatePicture(this._konvaNode);
     }
-  }, _ref.destroyed = function destroyed() {
+  }, _ref.unmounted = function unmounted() {
     updatePicture(this._konvaNode);
 
     this._konvaNode.destroy();

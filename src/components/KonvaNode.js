@@ -98,7 +98,7 @@ export default function(nameNode) {
                 updatePicture(this._konvaNode)
             }
         },
-        destroyed () {
+        unmounted () {
             updatePicture(this._konvaNode)
             this._konvaNode.destroy()
             this._konvaNode.off(EVENTS_NAMESPACE)
