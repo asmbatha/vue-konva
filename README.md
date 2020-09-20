@@ -41,7 +41,7 @@ npm install vue-konva konva --save
 ```javascript
 import { createApp } from 'vue'
 import App from './App.vue'
-import VueKonva from '@/konva'
+import VueKonva from 'vue-konva'
 createApp(App)
     .use(VueKonva)
     .mount('#app')
@@ -166,7 +166,7 @@ You can use your own prefix if default one conflicts with some other libs or you
 ```javascript
 import { createApp } from 'vue'
 import App from './App.vue'
-import VueKonva from '@/konva'
+import VueKonva from 'vue-konva'
 createApp(App)
     .use(VueKonva, { prefix: 'Konva'})
     .mount('#app')
