@@ -52,7 +52,6 @@ export default function(nameNode) {
             },
         },
         created () {
-            console.log('created', nameNode)
             this.initKonva()
         },
         mounted () {

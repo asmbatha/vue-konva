@@ -374,7 +374,6 @@ var CONTAINERS = {
       }
     }
   }, _ref.created = function created() {
-    console.log('created', nameNode);
     this.initKonva();
   }, _ref.mounted = function mounted() {
     var parentVueInstance = findParentKonva(this);
